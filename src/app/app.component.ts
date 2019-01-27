@@ -9,8 +9,9 @@ import * as CanvasJS from '../../node_modules/canvasjs/dist/canvasjs.min';
 })
 
 export class AppComponent implements OnInit {
-	  chartContainer.style.display = 'none';
-  
+  let myDiv = document.getElementById('chartContainer');
+	  myDiv.style.display = 'none';
+  let mybutton = document.getElementById('showChartButton');
 
 	height: any = 370;
 	width: any = 80;
@@ -44,8 +45,8 @@ export class AppComponent implements OnInit {
 			]
 		}]
 	});
-	showChartButton.addEventListener('click',function(){
-      chartContainer.style.display = 'inline';
+	mybutton.addEventListener('click',function(){
+      myDiv.style.display = 'inline';
     });
 	chart.render();
     
