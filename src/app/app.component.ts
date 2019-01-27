@@ -34,11 +34,11 @@ export class AppComponent implements OnInit {
 		data: [{
 			type: "column",
 			dataPoints: [
-				{ y: 71, label: this.labels[0], color: this.graph_color },
-				{ y: 55, label: this.labels[1], color: this.graph_color },
-				{ y: 50, label: this.labels[2], color: this.graph_color  },
-				{ y: 65, label: this.labels[3], color: this.graph_color  },
-				{ y: 1095, label: this.labels[4], color: this.graph_color  }
+				{ y: 71, label: this.labels[0], color: this.graph_color[0] },
+				{ y: 55, label: this.labels[1], color: this.graph_color[1] },
+				{ y: 50, label: this.labels[2], color: this.graph_color[2]  },
+				{ y: 65, label: this.labels[3], color: this.graph_color[3]  },
+				{ y: 1095, label: this.labels[4], color: this.graph_color[4]  }
 			]
 		}]
 	});
