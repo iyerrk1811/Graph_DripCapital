@@ -24,9 +24,6 @@ export class AppComponent implements OnInit {
 	}
 
 	ngOnInit() {
-    let myDiv = document.getElementById('chartContainer');
-    let mybutton = document.getElementById('showChartButton');
-    myDiv.style.display = 'none';
 		let chart = new CanvasJS.Chart("chartContainer", {
 		animationEnabled: true,
 		exportEnabled: true,
@@ -44,9 +41,7 @@ export class AppComponent implements OnInit {
 			]
 		}]
 	});
-	mybutton.addEventListener('click',function(){
-      myDiv.style.display = 'inline';
-    });
+
 	chart.render();
     
     }
