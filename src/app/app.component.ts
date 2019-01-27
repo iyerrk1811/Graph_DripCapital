@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   var width;
   var height;
 
-    width = 80;
+    width = 240;
     height = 340;
     
 		let chart = new CanvasJS.Chart("chartContainer", {
