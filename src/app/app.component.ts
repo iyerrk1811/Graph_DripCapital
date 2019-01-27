@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
 				{ y: 55, label: this.labels[1], color: this.graph_color[1] },
 				{ y: 50, label: this.labels[2], color: this.graph_color[2]  },
 				{ y: 65, label: this.labels[3], color: this.graph_color[3]  },
-				{ y: 800, label: this.labels[4], color: this.graph_color[4]  }
+				{ y: 98, label: this.labels[4], color: this.graph_color[4]  }
 			]
 		}]
 	});
