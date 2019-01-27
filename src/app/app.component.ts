@@ -20,9 +20,8 @@ export class AppComponent implements OnInit {
 	constructor(){
 		// this.height = 100;
 		// this.width = 50;
-		this.graph_color = "black";
-		this.labels = ["Apple", "Mango", "Orange", "Banana", "Pineapple",
-					"Pears", "Grapes", "Lychee", "Jackfruit"];
+		this.graph_color = ["Red","#ff0066","Orange","Yellow","Green"];
+		this.labels = ["Apple", "Mango", "Orange", "Banana", "Pineapple"];
 	}
 
 	ngOnInit() {
@@ -39,11 +38,7 @@ export class AppComponent implements OnInit {
 				{ y: 55, label: this.labels[1], color: this.graph_color },
 				{ y: 50, label: this.labels[2], color: this.graph_color  },
 				{ y: 65, label: this.labels[3], color: this.graph_color  },
-				{ y: 1095, label: this.labels[4], color: this.graph_color  },
-				{ y: 68, label: this.labels[5], color: this.graph_color  },
-				{ y: 28, label: this.labels[6], color: this.graph_color  },
-				{ y: 34, label: this.labels[7], color: this.graph_color  },
-				{ y: 14, label: this.labels[8], color: this.graph_color  }
+				{ y: 1095, label: this.labels[4], color: this.graph_color  }
 			]
 		}]
 	});
