@@ -1,6 +1,6 @@
 /*app.component.ts*/
 import { Component, OnInit } from '@angular/core';
-import * as CanvasJS from '../../node_modules/canvasjs-2.3/canvasjs.min';
+import * as CanvasJS from '../../node_modules/canvasjs/dist/canvasjs.min';
 // var CanvasJS = require('./canvasjs.min');
  
 @Component({
