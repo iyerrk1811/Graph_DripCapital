@@ -27,8 +27,8 @@ export class AppComponent implements OnInit {
   var width;
   var height;
 
-    width = $('#chartContainer').width();
-    height = $('#chartContainer').height();
+    width = 80;
+    height = 340;
     
 		let chart = new CanvasJS.Chart("chartContainer", {
 		animationEnabled: true,
