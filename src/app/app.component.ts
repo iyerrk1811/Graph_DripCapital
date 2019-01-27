@@ -9,8 +9,8 @@ import * as CanvasJS from '../../node_modules/canvasjs/dist/canvasjs.min';
 })
 
 export class AppComponent implements OnInit {
- 	height: any = 370;
-	width: any = 80;
+ 	//height: any = 370;
+	//width: any = 80;
   
 	style: Object;
 	graph_color: Array<string>;
@@ -24,9 +24,17 @@ export class AppComponent implements OnInit {
 	}
 
 	ngOnInit() {
+  var width;
+  var height;
+
+    width = $('#chartContainer').width();
+    height = $('#chartContainer').height();
+    
 		let chart = new CanvasJS.Chart("chartContainer", {
 		animationEnabled: true,
 		exportEnabled: true,
+    width: width,
+    height: height,
 		title: {
 			text: "Basic Column Chart in Angular"
 		},
