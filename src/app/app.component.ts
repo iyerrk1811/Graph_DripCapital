@@ -7,13 +7,11 @@ import * as CanvasJS from '../../node_modules/canvasjs/dist/canvasjs.min';
 	selector: 'app-root',
 	templateUrl: './app.component.html'
 })
-chartContainer.style.display = 'none';
-showChartButton.addEventListener('click',function(){
-    chartContainer.style.display = 'inline';
-});
 
 export class AppComponent implements OnInit {
-	
+	  chartContainer.style.display = 'none';
+  
+
 	height: any = 370;
 	width: any = 80;
 
@@ -46,7 +44,10 @@ export class AppComponent implements OnInit {
 			]
 		}]
 	});
-		
+	showChartButton.addEventListener('click',function(){
+      chartContainer.style.display = 'inline';
+    });
 	chart.render();
+    
     }
 }
