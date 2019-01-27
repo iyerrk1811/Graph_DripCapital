@@ -9,8 +9,8 @@ import * as CanvasJS from '../../node_modules/canvasjs/dist/canvasjs.min';
 })
 
 export class AppComponent implements OnInit {
- 	//height: any = 370;
-	//width: any = 80;
+ 	height: any = 370;
+	width: any = 80;
   
 	style: Object;
 	graph_color: Array<string>;
