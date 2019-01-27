@@ -9,13 +9,9 @@ import * as CanvasJS from '../../node_modules/canvasjs/dist/canvasjs.min';
 })
 
 export class AppComponent implements OnInit {
-  let myDiv = document.getElementById('chartContainer');
-	  myDiv.style.display = 'none';
-  let mybutton = document.getElementById('showChartButton');
-
-	height: any = 370;
+ 	height: any = 370;
 	width: any = 80;
-
+  
 	style: Object;
 	graph_color: Array<string>;
 	labels: Array<string>; 
@@ -28,6 +24,9 @@ export class AppComponent implements OnInit {
 	}
 
 	ngOnInit() {
+    let myDiv = document.getElementById('chartContainer');
+    let mybutton = document.getElementById('showChartButton');
+    myDiv.style.display = 'none';
 		let chart = new CanvasJS.Chart("chartContainer", {
 		animationEnabled: true,
 		exportEnabled: true,
