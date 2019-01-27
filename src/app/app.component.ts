@@ -7,7 +7,11 @@ import * as CanvasJS from '../../node_modules/canvasjs/dist/canvasjs.min';
 	selector: 'app-root',
 	templateUrl: './app.component.html'
 })
- 
+chartContainer.style.display = 'none';
+showChartButton.addEventListener('click',function(){
+    chartContainer.style.display = 'inline';
+});
+
 export class AppComponent implements OnInit {
 	
 	height: any = 370;
