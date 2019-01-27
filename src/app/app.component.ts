@@ -24,17 +24,11 @@ export class AppComponent implements OnInit {
 	}
 
 	ngOnInit() {
-  var width;
-  var height;
 
-    width = 240;
-    height = 340;
     
 		let chart = new CanvasJS.Chart("chartContainer", {
 		animationEnabled: true,
 		exportEnabled: true,
-    width: width,
-    height: height,
 		title: {
 			text: "Basic Column Chart in Angular"
 		},
