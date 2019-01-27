@@ -43,7 +43,5 @@ export class AppComponent implements OnInit {
 	});
 
 	chart.render();
-    chart.height =370;
-    chart.weight =80;
     }
 }
