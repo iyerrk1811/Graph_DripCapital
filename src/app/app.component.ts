@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
 	width: any = 80;
 
 	style: Object;
-	graph_color: string;
+	graph_color: Array<string>;
 	labels: Array<string>; 
 	
 	constructor(){
